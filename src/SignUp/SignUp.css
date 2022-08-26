@@ -1,0 +1,23 @@
+.signupBody {
+    margin: 3rem auto;
+    width: 95%;
+    max-width: 13rem;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    padding: 0rem;
+    text-align: center;
+}
+  
+
+
+
+.signupBtn{
+color: white;
+background-color: black;
+border-radius: 5px;
+border:none;
+margin-left: 2%;
+height: 25px;
+cursor: pointer;
+} 
