@@ -1,12 +1,16 @@
 import { useHistory } from "react-router-dom";
 import { useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { authsliceactions } from "../Store";
 import './SignUp.css';
 
 
 
 
 const SignUp = () => {
-  const history = useHistory();
+   const dispatch = useDispatch();
+   const history = useHistory();
    const inputEmailRef = useRef();
    const inputPassRef = useRef();
    const inputConfirmPassRef = useRef();
@@ -64,6 +68,9 @@ const SignUp = () => {
         })
     }
   }).then((data) => {
+    console.log(data);
+    dispatch(authsliceactions.tokenId(data.idToken));
+    console.log(data.idToken)
     history.replace('/WelcomePage');
   })
 
@@ -77,7 +84,7 @@ const SignUp = () => {
       <form onSubmit={submitHandler}>
       <input type="email" placeholder='Email' ref={inputEmailRef} required/>
       <input type="password" placeholder='Password' ref={inputPassRef}/>
-      <input type="password" placeholder='Password' ref={inputConfirmPassRef}/>
+      <input type="password" placeholder='Confirm Password' ref={inputConfirmPassRef}/>
       { !isLoading && <button>{isLogin ? 'Login' : 'Create Account'}</button>}
            {isLoading && <p>Loading..</p>}
            <button
@@ -85,6 +92,7 @@ const SignUp = () => {
               className='signupBtn'
               onClick={switchHandler}
             >Sign Up</button>
+             { isLogin&&<NavLink to='/ChangePassword'>Forgot Password? Click</NavLink>}
       </form>
     </div>
   

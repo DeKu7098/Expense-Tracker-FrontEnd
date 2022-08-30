@@ -1,0 +1,18 @@
+.style3{
+    border-bottom: 1px solid grey;
+    display: flex;
+justify-content: center;
+}
+.style4 {
+    padding: 5px 10px;
+    background-color: rgba(140,72,72,.2);
+    border-radius: 10px;
+    max-width: 550px;
+    margin-left: auto;
+    font-style: italic;
+    
+}
+.photo{
+    width:32px;
+    height:32px;
+}

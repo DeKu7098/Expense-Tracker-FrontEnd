@@ -1,0 +1,20 @@
+.productContainer {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: rgb(2, 73, 53);
+   
+}
+.productContainer11 {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+   background-color: rgb(203, 17, 245);
+   color: rgb(23, 22, 22);
+   
+   
+}

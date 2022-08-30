@@ -1,0 +1,36 @@
+.signupBody2 {
+    margin: 3rem auto;
+    width: 95%;
+    max-width: 48rem;
+    border-radius: 6vh;
+    background-color: rgb(22, 186, 186);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    padding: 3vmax;
+    text-align: center;
+}
+.details{
+
+    font-size: 1rem;
+  color: black;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+.signupBtn{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border:none;
+    margin-left: 2%;
+    height: 25px;
+    cursor: pointer;
+} 
+.signupBody5 {
+    background-color: rgb(186, 93, 22);
+    margin: 3rem auto;
+    width: 95%;
+    max-width: 48rem;
+    border-radius: 6vh;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    padding: 3vmax;
+    text-align: center;
+}
